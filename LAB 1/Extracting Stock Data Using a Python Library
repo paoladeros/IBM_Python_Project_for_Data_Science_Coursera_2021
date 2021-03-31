@@ -1,0 +1,44 @@
+Extracting Stock Data Using a Python Library
+
+Code solution to complete the lab:
+
+!pip install yfinance
+
+import yfinance as yf
+import pandas as pd
+
+!pip install yfinance
+import yfinance as yf
+import pandas as pd
+AMD = yf.Ticker("amd")
+
+AMD_info=AMD.info
+AMD_info
+
+AMD_info['country']
+
+AMD_info['sector']
+
+AMD_Volume = AMD.history(period="max")
+AMD_Volume.head(100000000)
+AMD_Volume.max()
+
+QUIZ
+
+1.
+Question 1
+From the lab exercise, in which country is AMD (Advanced Micro Devices) situated?
+
+Reply: United States
+
+2.
+Question 2
+In the lab exercise, to which sector does AMD (Advanced Micro Devices) belong?
+
+Reply: Technology
+
+3.
+Question 3
+In the lab exercise what is the max of the volume of AMD?
+
+Reply: 3.250584e+08
